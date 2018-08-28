@@ -17,7 +17,7 @@ class Artist
       if a.name==name 
         return a 
       else 
-        return Artist.new(name)
+        Artist.new(name)
       end}
   end
   
