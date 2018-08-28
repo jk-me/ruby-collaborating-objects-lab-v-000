@@ -4,11 +4,11 @@ class MP3Importer
     @path=path
   end 
   
-  def self.files
+  def files
     @file_array=Dir.entries(self.path)
   end 
     
-  def self.import
+  def import
     @file_array.each{|f| 
       
       Song.new_by_filename(f)}
