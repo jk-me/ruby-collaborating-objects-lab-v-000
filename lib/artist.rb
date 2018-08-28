@@ -15,7 +15,6 @@ class Artist
   def self.find_or_create_by_name(name)
     if Artist.all==[]
       b=Artist.new(name)
-      @@all << b
       return b 
     else 
       Artist.all.each{|a| 
@@ -23,7 +22,6 @@ class Artist
           return a 
         else 
           b=Artist.new(name)
-          @@all << b 
         end}
     end
   end
