@@ -12,7 +12,9 @@ class MP3Importer
     
   def self.import
     @file_array.each{|f| 
-      Song.new_by_filename(f)
+      x=f.split(' - ')[0]
+      Song.new_by_filename(x)}
+  end 
     
 end
     
