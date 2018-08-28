@@ -5,9 +5,12 @@ class Artist
     @name=name
     @songs=[]
     @@all << self 
-  end 
+  end
+  def self.all 
+    @@all 
+  end
   def self.find_or_create_by_name(name)
-    @@all.each{|a| 
+    self.all.each{|a| 
       if a.name==name 
         return a 
       else 
