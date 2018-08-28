@@ -7,7 +7,7 @@ class Song
     x = name.split(' - ')
     s = Song.new(x[1])
     s.artist= Artist.find_or_create_by_name(x[0])
-    Artist.add_song(s)
+    s.artist.add_song(s)
     s
   end
   #def artist_name=(name)
