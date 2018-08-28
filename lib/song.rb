@@ -9,7 +9,7 @@ class Song
     s.artist= s.artist_name= (x[0])
     s
   end
-  def artist_name=(name)
+  def self.artist_name=(name)
     a=Artist.find_or_create_by_name(name)
     
   end
