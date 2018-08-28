@@ -27,4 +27,14 @@ class Artist
   def save
     Artist.all << self 
   end
+  
+  def print_songs 
+    
 end 
+
+
+
+
+
+
+
