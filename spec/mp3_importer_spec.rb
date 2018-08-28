@@ -39,5 +39,5 @@ describe "MP3Importer" do
       music_importer.import
     end
   end
-  #binding pry
+  binding pry
 end
