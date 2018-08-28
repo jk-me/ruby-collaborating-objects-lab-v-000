@@ -14,14 +14,18 @@ class Artist
   
   def self.find_or_create_by_name(name)
     if Artist.all==[]
-      
-    Artist.all.each{|a| 
-      if a.name==name 
-        a 
-      else 
-        b=Artist.new(name)
-        @@all << b 
-      end}
+      b=Artist.new(name)
+      @@all << b
+      return b 
+    else 
+      Artist.all.each{|a| 
+        if a.name==name 
+          return a 
+        else 
+          b=Artist.new(name)
+          @@all << b 
+        end}
+    end
   end
   
   def add_song(song)
