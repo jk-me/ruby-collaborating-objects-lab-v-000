@@ -17,7 +17,8 @@ class Artist
       if a.name==name 
         return a 
       else 
-        Artist.new(name)
+        b=Artist.new(name)
+        @@all << b 
       end}
   end
   
