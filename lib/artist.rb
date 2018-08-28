@@ -13,6 +13,8 @@ class Artist
   end
   
   def self.find_or_create_by_name(name)
+    if Artist.all==[]
+      
     Artist.all.each{|a| 
       if a.name==name 
         a 
