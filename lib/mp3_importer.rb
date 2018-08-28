@@ -9,6 +9,7 @@ class MP3Importer
   def self.files
     file_array=Dir.entries(self.path)
     
+    
   def self.import 
     
 end
