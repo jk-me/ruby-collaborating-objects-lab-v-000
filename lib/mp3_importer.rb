@@ -1,5 +1,3 @@
-
-
 class MP3Importer
   attr_accessor :path, :file_array
   def initialize(path)
