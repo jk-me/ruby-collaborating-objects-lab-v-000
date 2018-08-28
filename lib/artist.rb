@@ -12,7 +12,7 @@ class Artist
   end
   
   def self.find_or_create_by_name(name)
-    self.all.each{|a| 
+    Artist.all.each{|a| 
       if a.name==name 
         return a 
       else 
@@ -25,6 +25,6 @@ class Artist
   end 
   
   def save
-    self.all << self 
+    Artist.all << self 
   end
 end 
